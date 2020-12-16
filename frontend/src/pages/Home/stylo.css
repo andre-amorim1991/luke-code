@@ -1,0 +1,59 @@
+.BoxChange {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(40, 126, 37);
+
+    
+    animation-name: mudaCor;/*Chamar a animação*/
+
+    animation-duration: 10s;/*tempo de duração*/
+
+    animation-delay: 2s; /*Um delay para iniciar a animação*/
+
+    animation-fill-mode: forwards; /*a configuração fica com seu ultimo estado do final. */
+
+}
+
+/*criação da animação*/
+@keyframes mudaCor{  /**/
+
+    /*Inicio da animação*/
+    0% {                           /*pode-se usar FROM - TO*/
+        background-color: green;
+    }
+
+    /*meio da animação*/
+    50% {
+        background-color:yellow;
+    }
+
+    /*fim da animação*/
+    100% {/**/
+        background-color: red;
+    }
+
+}
+
+.Star2Change{
+     height: 150px;
+     width: 150px;
+     background-color:red;
+
+     animation: Rodando 1s infinite;
+     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+@keyframes Rodando {
+    
+   0%{
+        transform: rotate(0deg);
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        width: 400px;
+        height: 400px;
+    }
+}
